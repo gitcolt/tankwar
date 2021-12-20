@@ -1,3 +1,7 @@
+import { io } from 'socket.io-client';
+
+const socket = io();
+
 const gridCan = document.querySelector('#grid-canvas') as HTMLCanvasElement;
 const gridCtx = gridCan.getContext('2d');
 
